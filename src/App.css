@@ -281,7 +281,7 @@ nav {
 }
 
 .image img{
-  height:2.5rem;
+  height:4rem;
 }
 
 .degrees{
@@ -573,7 +573,7 @@ nav {
   .hourly{
     display: flex;
     flex-direction: column;
-    padding:2rem 2.5rem;
+    padding:1.75rem 3rem;
     justify-content: space-around;
     align-items: center;
     height: 100% !important;

@@ -375,6 +375,7 @@ nav {
 .drm{
   padding:.1rem;
   width: fit-content;
+  max-width: 60%;
 }
 
 .weekly:nth-child(3n+1) .durum,.weekly:nth-child(3n+2) .durum{

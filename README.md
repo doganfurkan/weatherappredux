@@ -3,7 +3,8 @@
 [See it](https://weatherredux.netlify.app)
 
 # Screenshots
-
+![Week](./Opera Anlık Görüntü_2023-02-12_141745_localhost.png)
+![Menu](./Opera Anlık Görüntü_2023-02-12_141943_localhost.png)
 
 ## Available Scripts
 

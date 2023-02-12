@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import Left from './components/Left';
+import Right from './components/Right';
+import { fetchData, fetchDays, fetchWeek } from "./redux/weatherSlice";
+import { useDispatch, useSelector } from 'react-redux';
 
 function App() {
+  const dispatch = useDispatch();
+  const latitude = useSelector((state) => state.weather.lat)
+  const lon = useSelector((state) => state.weather.lon)
+
+  useEffect(() => {
+    dispatch(fetchData("q=istanbul"));
+  }, [dispatch]);
+
+  useEffect(() => {
+    dispatch(fetchWeek({latitude:latitude,lon:lon}));
+    dispatch(fetchDays({latitude:latitude,lon:lon}));
+  },[dispatch,latitude,lon])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Left/>
+      <Right/>
+    </>
   );
 }
 

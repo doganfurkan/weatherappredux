@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Live Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[See it](https://weatherredux.netlify.app)
+
+# Screenshots
+
 
 ## Available Scripts
 

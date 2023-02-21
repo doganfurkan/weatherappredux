@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import "./Left.css";
 import {
   CiSearch,
   CiLocationOn,

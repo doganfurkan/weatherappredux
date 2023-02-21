@@ -2,6 +2,9 @@
 
 [See it](https://weatherredux.netlify.app)
 
+# Android App
+[Mega.nz .apk download link](https://mega.nz/file/XINwABBL#6w3OC2ThxFLlJE28YDQOPIzk06M602EsXvy4_tLYiFs)
+
 # Screenshots
 ![Week](./week.png)
 ![Menu](./menu.png)

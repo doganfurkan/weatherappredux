@@ -28,7 +28,7 @@ export default function Week() {
                 <div className={loading ? "loading drm" : "drm"}>{item.weather[0].description}</div>
               </div>
               <div className={loading ? "loading img" : "img"}>
-                <img src={`/icons/${item.weather[0].icon}.png`} alt="weather" />
+                <img src={`/icons/${item.weather[0].icon}.webp`} alt="weather" />
               </div>
             </div>
           );

@@ -18,7 +18,7 @@ export default function Hourly() {
                   </div>
                   <div className={loading ? "loading image" : "image"}>
                     <img
-                      src={`/icons/${item.weather[0].icon}.png`}
+                      src={`/icons/${item.weather[0].icon}.webp`}
                       alt="yağış"
                     />
                   </div>
@@ -27,7 +27,7 @@ export default function Hourly() {
                   </div>
                   <div className={loading ? "loading wind" : "wind"}>
                     <img
-                      src="wind.png"
+                      src="wind.webp"
                       alt="wind"
                       style={{ transform: `rotate(${item.wind.deg}deg)` }}
                     /> 

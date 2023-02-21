@@ -104,7 +104,7 @@ export default function Left() {
         </div>
         <div id="image">
           <div className={loading ? "loading" : ""}>
-            <img src={`/icons/${daily.icon}.png`} alt="img" />
+            <img src={`/icons/${daily.icon}.webp`} alt="img" />
           </div>
         </div>
         <div id="stats">

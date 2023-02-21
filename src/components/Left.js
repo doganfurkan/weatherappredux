@@ -62,13 +62,14 @@ export default function Left() {
               id="searchInput"
               name="cityName"
               placeholder="Enter City Name"
+              aria-label="Enter City Name"
               required
               value={searchTerm}
               onChange={(e) => {
                 setSearchTerm(e.target.value);
               }}
             />
-            <button id="searchButton">
+            <button aria-label="Search Button" id="searchButton">
               <CiSearch />
             </button>
             <span
@@ -87,6 +88,7 @@ export default function Left() {
         </div>
         <button
           id="openMenu"
+          aria-label="Open Menu"
           onClick={() => {
             setMenuopen("active");
           }}
@@ -130,30 +132,30 @@ export default function Left() {
               document.body.classList.toggle("dark");
             }}
           >
-            <button className="themeButton darkmode">
+            <button aria-label="Change to dark theme" className="themeButton darkmode">
               <CiDark />
             </button>
             <b className="darkmode">Dark Mode</b>
-            <button className="themeButton lightmode">
+            <button aria-label="Change to light theme" className="themeButton lightmode">
               <CiSun />
             </button>
             <b className="lightmode">Light Mode</b>
           </div>
           <div className="menuItem hidden">
-            <button>
+            <button aria-label="Link to my website">
               <CiLink />
             </button>
             My Website
           </div>
           <a href="https://github.com/doganfurkan" target="_blank" rel="noreferrer" className="menuItem">
-            <button>
+            <button aria-label="Link to my github account">
               <VscGithubAlt />
             </button>
             My Github
           </a>
           <a href="https://www.linkedin.com/in/furkan-doğan/" target="_blank" rel="noreferrer" className="menuItem">
             {" "}
-            <button>
+            <button aria-label="Link to my linkedin account">
               <CiLinkedin />
             </button>
             My Linkedin
@@ -165,7 +167,7 @@ export default function Left() {
             </span>{" "}
             by Furkan Doğan.
           </div>
-          <button
+          <button aria-label="Close Menu"
             id="closeMenu"
             onClick={() => {
               setMenuopen("");
